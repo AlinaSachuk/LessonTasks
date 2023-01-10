@@ -19,5 +19,14 @@ public class Main {
         System.out.println(listQ);
         HashMap<String, String> map = new HashMap<>();
         map.put("0", "zero");
+        TreeSet<User> listTree = new TreeSet<>();
+        listTree.add(new User("Alex3"));
+        listTree.add(new User("Alex1"));
+        listTree.add(new User("Alex2"));
+        listTree.add(new User("Alex"));
+        System.out.println(listTree);
+        for (User user:listTree){
+            System.out.print(user.name.hashCode() + " ");
+        }
     }
 }
