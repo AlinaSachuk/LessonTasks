@@ -6,7 +6,7 @@ public class Employee {
     private long salary;
     private String email;
 
-    public static long getSalary() {
+    public long getSalary() {
         return salary;
     }
 
