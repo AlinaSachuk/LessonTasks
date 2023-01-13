@@ -1,3 +1,6 @@
+import L.Rectangle;
+import L.Square;
+
 import java.util.*;
 
 public class Main {
@@ -28,5 +31,14 @@ public class Main {
         for (User user:listTree){
             System.out.print(user.name.hashCode() + " ");
         }
+        System.out.println();
+        System.out.println("Lesson 29. Studying SOLID!!!");
+        Rectangle rectangle = new Rectangle();
+        rectangle.setX(3);
+        rectangle.setY(5);
+        System.out.println(rectangle.perimetr());
+        Square square = new Square();
+        square.setX(3);
+        System.out.println(square.perimetr());
     }
 }
