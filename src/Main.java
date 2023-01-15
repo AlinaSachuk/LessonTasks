@@ -1,3 +1,5 @@
+import D.NotificationI;
+import D.TelegramNotification;
 import L.Rectangle;
 import L.Square;
 
@@ -40,5 +42,7 @@ public class Main {
         Square square = new Square();
         square.setX(3);
         System.out.println(square.perimetr());
+        NotificationI notificationI = new TelegramNotification();
+        notificationI.sendMessage("Hello world!");
     }
 }
